@@ -38,7 +38,31 @@ User Model
 
 ```
 
+## Screenshots
 
+### Create user
+
+`http://localhost:3000/users/new`
+![Create user](https://res.cloudinary.com/bolaah/image/upload/v1560484514/github-microverse-project/rails_form/form_create_new.png)
+
+### Edit/Update user
+
+`http://localhost:3000/users/1/edit`
+![Edit/Update user](https://res.cloudinary.com/bolaah/image/upload/v1560484514/github-microverse-project/rails_form/form_update.png)
+
+### Form Validations
+
+![Form Validations](https://res.cloudinary.com/bolaah/image/upload/v1560484514/github-microverse-project/rails_form/form_valid.png)
+
+### Show current user
+
+`http://localhost:3000/users/1`
+![Show current user](https://res.cloudinary.com/bolaah/image/upload/v1560484514/github-microverse-project/rails_form/form_display.png)
+
+### Show all users
+
+`http://localhost:3000/users`
+![Show all users](https://res.cloudinary.com/bolaah/image/upload/v1560484514/github-microverse-project/rails_form/form_show_all.png)
 
 ## Ruby version
 
