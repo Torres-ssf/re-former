@@ -1,0 +1,18 @@
+<div>
+  <%= form_for @user do |f| %>
+    <%= render 'shared/error_messages' %>
+    <div>
+      <%= f.label :username, "Enter Your Username Here:" %><br />
+      <%= f.text_field :username %><br />
+    </div>
+    <div>
+      <%= f.label :email %><br />
+      <%= f.email_field :email %><br />
+    </div>
+    <div>
+      <%= f.label :password %><br />
+      <%= f.password_field :password %><br />
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>
