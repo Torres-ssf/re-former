@@ -16,10 +16,10 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
-    if User.update(user_params)
-      redirect_to new_user_path
+    if @user.update_attributes(user_params)
+      redirect_to @user
     else
-      render :new
+      render :edit
     end
   end
 
@@ -28,7 +28,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to new_user_path
+      redirect_to @user
     else
       render :new
     end
