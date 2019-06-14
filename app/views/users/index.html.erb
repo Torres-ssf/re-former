@@ -1,13 +1,19 @@
-<h1>All Users</h1>
-<ol>
-  <% @users.each do |user| %>
-    <li>
-      <span><strong>Username: </strong><%= user.username %></span>
-      <span><strong>Email: </strong><%= user.email %></span>
-      <span><%= link_to 'Show', user %></span>
-      <span><%= link_to 'Edit', edit_user_path(user) %></span>
-    </li>
-  <% end %>
-</ol>
-<br>
-<%= link_to 'Create new User', new_user_path %>
+<header>
+  <h1>All Users</h1>
+</header>
+<main>
+  <ol>
+    <% @users.each do |user| %>
+      <li>
+        <span><strong>Username: </strong><%= user.username %></span>
+        <span><strong>Email: </strong><%= user.email %></span>
+        <span><%= link_to 'Show', user %></span>
+        <span><%= link_to 'Edit', edit_user_path(user) %></span>
+      </li>
+    <% end %>
+  </ol>
+  <br>
+</main>
+<footer>
+  <%= link_to 'Create new User', new_user_path %>
+</footer>
