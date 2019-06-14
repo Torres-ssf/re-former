@@ -1,0 +1,17 @@
+<header>
+  <h1> Current User </h1>
+</header>
+<main>
+  <p>
+    <strong>Username: </strong>
+    <%= @user.username %>
+  </p>
+  <p>
+    <strong>Email: </strong>
+    <%= @user.email %>
+  </p>
+</main>
+<footer>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</footer>
