@@ -29,6 +29,8 @@
 
 -->
 <%= form_for @user do |f| %>
+<%= render 'shared/error_messages' %>
+
   <%= f.label :username, "Enter Your Username Here:" %><br />
   <%= f.text_field :username %><br />
   <%= f.label :email %><br />
