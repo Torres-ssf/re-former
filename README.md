@@ -15,7 +15,7 @@ This is the fifth project of the Main Rails curriculum at [Microverse](https://w
 
 ```bash
 $ git clone git@github.com:Torres-ssf/re-former.git
-$ cd micro-reddit
+$ cd re-former
 
 ```
 
